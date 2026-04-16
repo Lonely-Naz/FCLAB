@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我 - 封辰LAB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/theme.css" />
+</head>
+<body class="about-page">
+  <div class="site-shell">
+    <nav class="nav-wrap fixed top-0 w-full z-50">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a class="brand-text text-xl" href="index.html">FCLAB</a>
+        <div class="desktop-nav flex items-center gap-8 font-['Space_Grotesk'] text-sm font-semibold">
+          <a class="nav-link" href="index.html">首页</a>
+          <a class="nav-link active" href="about.html">关于我</a>
+          <a class="nav-link" href="portfolio.html">作品集</a>
+          <a class="nav-link" href="thoughts.html">个人博客</a>
+        </div>
+        <div class="language-switch" data-language-switch aria-label="语言切换">
+          <button type="button" data-lang-option="zh" aria-pressed="true">中</button>
+          <button type="button" data-lang-option="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="about-main">
+      <section class="about-space-scene" aria-labelledby="about-title">
+        <div class="about-space-heading">
+          <p class="about-eyebrow">About Fengchen</p>
+          <h1 id="about-title">点击一颗星球，认识我的一个侧面。</h1>
+        </div>
+
+        <div class="about-system" aria-label="关于我的星球导航">
+          <div class="about-orbit-ring about-orbit-ring-one" aria-hidden="true"></div>
+          <div class="about-orbit-ring about-orbit-ring-two" aria-hidden="true"></div>
+          <div class="about-orbit-ring about-orbit-ring-three" aria-hidden="true"></div>
+          <div class="about-orbit-ring about-orbit-ring-four" aria-hidden="true"></div>
+          <div class="about-orbit-ring about-orbit-ring-five" aria-hidden="true"></div>
+          <div class="about-orbit-ring about-orbit-ring-six" aria-hidden="true"></div>
+
+          <figure class="about-core">
+            <img src="assets/images/about/fengchen-avatar.png" alt="封辰头像" />
+            <figcaption>FCLAB</figcaption>
+          </figure>
+
+          <div class="about-orbit-track about-orbit-position">
+            <button class="about-planet" type="button" data-about-target="position" style="--size: 3.45rem; --tone: #fabc4e;" aria-pressed="false">
+              <span class="planet-core"></span>
+              <span class="planet-label">定位</span>
+            </button>
+          </div>
+          <div class="about-orbit-track about-orbit-intro">
+            <button class="about-planet" type="button" data-about-target="intro" style="--size: 3.35rem; --tone: #ff7aa8;" aria-pressed="false">
+              <span class="planet-core"></span>
+              <span class="planet-label">介绍</span>
+            </button>
+          </div>
+          <div class="about-orbit-track about-orbit-archive">
+            <button class="about-planet" type="button" data-about-target="archive" style="--size: 3.55rem; --tone: #5de6ff;" aria-pressed="false">
+              <span class="planet-core"></span>
+              <span class="planet-label">网站</span>
+            </button>
+          </div>
+          <div class="about-orbit-track about-orbit-focus">
+            <button class="about-planet" type="button" data-about-target="focus" style="--size: 4.35rem; --tone: #7dff9f;" aria-pressed="false">
+              <span class="planet-core"></span>
+              <span class="planet-label">关注</span>
+            </button>
+          </div>
+          <div class="about-orbit-track about-orbit-method">
+            <button class="about-planet" type="button" data-about-target="method" style="--size: 3.75rem; --tone: #b76dff;" aria-pressed="false">
+              <span class="planet-core"></span>
+              <span class="planet-label">方式</span>
+            </button>
+          </div>
+          <div class="about-orbit-track about-orbit-now">
+            <button class="about-planet" type="button" data-about-target="now" style="--size: 3.5rem; --tone: #8aa7ff;" aria-pressed="false">
+              <span class="planet-core"></span>
+              <span class="planet-label">现在</span>
+            </button>
+          </div>
+        </div>
+
+        <aside class="about-info-popover" data-about-popover hidden aria-live="polite">
+          <button class="about-popover-close" type="button" data-about-close aria-label="关闭介绍">关闭</button>
+          <div class="about-copy-panels">
+            <article class="about-copy-panel" data-about-panel="position" hidden>
+              <span>01 / Position</span>
+              <h2>一句话定位</h2>
+              <p>我是封辰，一个持续探索 AI、内容表达与数字创作的人。</p>
+            </article>
+            <article class="about-copy-panel" data-about-panel="intro" hidden>
+              <span>02 / Intro</span>
+              <h2>我如何理解表达</h2>
+              <p>我喜欢研究一件事如何被更清晰地表达，也喜欢把零散的想法整理成更完整的作品。</p>
+              <p>这几年，我越来越关注 AI、视频表达、网页呈现和个人品牌之间的关系，也在不断学习如何把这些能力真正连接起来。</p>
+            </article>
+            <article class="about-copy-panel" data-about-panel="archive" hidden>
+              <span>03 / Archive</span>
+              <h2>这个网站是什么</h2>
+              <p>这个网站对我来说，不只是一个展示页。</p>
+              <p>它更像是我的个人存档、学习记录，也是我持续输出和长期成长的一个空间。</p>
+            </article>
+            <article class="about-copy-panel" data-about-panel="focus" hidden>
+              <span>04 / Focus</span>
+              <h2>我在关注什么</h2>
+              <ul>
+                <li>AI 在创作中的真实应用</li>
+                <li>更有结构感的内容表达</li>
+                <li>视频与视觉呈现</li>
+                <li>网页作为个人表达载体的可能性</li>
+              </ul>
+            </article>
+            <article class="about-copy-panel" data-about-panel="method" hidden>
+              <span>05 / Method</span>
+              <h2>我的做事方式</h2>
+              <p>我习惯先把问题想清楚，再把内容整理清楚，最后把呈现打磨清楚。</p>
+              <p>比起做很多杂乱的东西，我更希望每一次输出都能更接近“完整、清晰、有质感”。</p>
+            </article>
+            <article class="about-copy-panel" data-about-panel="now" hidden>
+              <span>06 / Now</span>
+              <h2>现在的我</h2>
+              <p>我正在持续提升自己的创作能力，也在学习如何把内容、工具和技术更自然地结合起来。</p>
+              <p>我希望以后做出来的作品，不只是能看，而是真的能代表我。</p>
+              <p>这里会慢慢更新我的项目、思考和阶段性成果。欢迎你通过这个网站认识我，也欢迎和我交流。</p>
+            </article>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

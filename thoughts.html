@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 随想录 - 封辰LAB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/theme.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <nav class="nav-wrap fixed top-0 w-full z-50">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a class="brand-text text-xl" href="index.html">FCLAB</a>
+        <div class="desktop-nav flex items-center gap-8 font-['Space_Grotesk'] text-sm font-semibold">
+          <a class="nav-link" href="index.html">首页</a>
+          <a class="nav-link" href="about.html">关于我</a>
+          <a class="nav-link" href="portfolio.html">作品集</a>
+          <a class="nav-link active" href="thoughts.html">个人博客</a>
+        </div>
+        <div class="language-switch" data-language-switch aria-label="语言切换">
+          <button type="button" data-lang-option="zh" aria-pressed="true">中</button>
+          <button type="button" data-lang-option="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-32 pb-24 max-w-7xl mx-auto px-6">
+      <section class="blog-dev-banner glass-panel rounded-2xl border border-white/10">
+        <span class="material-symbols-outlined">construction</span>
+        <p>加紧开发中...</p>
+      </section>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-8 space-y-6">
+          <section class="glass-panel rounded-2xl p-6 border border-white/10">
+            <textarea class="w-full bg-transparent min-h-24 resize-none outline-none text-lg placeholder:text-slate-400/50" placeholder="关于 AI，此刻在想什么？"></textarea>
+            <div class="blog-compose-actions pt-4 mt-4 border-t border-white/10 flex justify-between items-center">
+              <div class="flex gap-3 text-slate-400">
+                <span class="material-symbols-outlined">image</span>
+                <span class="material-symbols-outlined">link</span>
+                <span class="material-symbols-outlined">tag</span>
+              </div>
+              <button class="btn-primary px-6 py-2 text-sm">发布</button>
+            </div>
+          </section>
+
+          <article class="glass-panel rounded-2xl p-6 border border-white/10 card-hover">
+            <p class="text-sm text-slate-400">封辰 · 2小时前</p>
+            <p class="mt-3 leading-relaxed">刚尝试了最新多模态模型。它对视觉隐含情绪的捕捉已接近“共情”构图。AGI 也许不需要灵魂，它需要足够好的镜像神经元模拟。</p>
+            <div class="grid sm:grid-cols-2 gap-2 mt-4 rounded-xl overflow-hidden">
+              <img class="w-full h-44 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFk9k6YfyMqGqQKG9WwpmIiax7W-aDR73F28q58HUgVvD98y3mkwLknfO0zvgo46I9ebqnh3AvUIVLOYuDq464H5mdPGPfFr9Rp4Yqn2Bu1YZbNe1QU2b9dCSCU7d5w8qCYEq1vdHWIbC8ptPtG80cVAUBHUTVaVxc0qBcJKqEWH1nLvLomXCeOTXWjHcgyaaPnsaoUHrMXePTr9UudtiKurKOI5uOT-KbqAkq4L8EFtOVp1YNrC7Z-UUAGxH7xYOkimG3QqvZyQ" alt="AI 图像 1" />
+              <img class="w-full h-44 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbGtH6QVjKwcq5oDdvDWjtkuS8T5j5TGkZL98Ub5vjj-e2qhw_9XqD6XH3JALTMjbyThEmyh1aBSOzX1qdQqMSEWkjnTaO-U0fBDhCMzre2xWZW5_ClEdufbFV7W35YX4UjfqqWPh6e9Fy6JkD9tZN2C8PQP_jRjn3Zc5Moh8mpyIn5-ijdweuhHkMrWcCA3rJxfe2_wx8zw0JFYFlUZcR4q0eSBF7Iy2OaIq_6SJsYINLXvyt3BVq057PqFNlaDkEButn4hm2VA" alt="AI 图像 2" />
+            </div>
+          </article>
+
+          <article class="glass-panel rounded-2xl p-6 border border-white/10 card-hover">
+            <p class="text-sm text-slate-400">封辰 · 昨天 22:15</p>
+            <p class="mt-3 leading-relaxed">提示词工程正在从黑盒咒语演变为逻辑架构。未来开发者的核心能力，可能是定义问题边界而非堆砌实现细节。</p>
+          </article>
+
+          <article class="glass-panel rounded-2xl p-6 border border-white/10 card-hover">
+            <p class="text-sm text-slate-400">封辰 · 3月14日</p>
+            <p class="mt-3 leading-relaxed">AI 时代，审美是最后一道护城河。当生成内容溢出，人类的选择力与策展力比创作力更珍贵。</p>
+          </article>
+        </div>
+
+        <aside class="lg:col-span-4 space-y-6 lg:sticky lg:top-32">
+          <div class="glass-panel rounded-2xl p-5 border border-white/10">
+            <h3 class="section-title text-xl">AI 热议榜</h3>
+            <ul class="space-y-3 mt-4 text-sm text-slate-300/85">
+              <li># 大模型多模态演进 · 1.2k</li>
+              <li># 生产力革命 · 856</li>
+              <li># 提示词工程进阶 · 642</li>
+              <li># AGI 审美重构 · 421</li>
+            </ul>
+          </div>
+          <div class="glass-panel rounded-2xl p-5 border border-white/10">
+            <h3 class="section-title text-xl">思考分类</h3>
+            <div class="flex flex-wrap gap-2 mt-4 text-xs">
+              <span class="px-3 py-1 rounded-full bg-white/5">#技术随笔</span>
+              <span class="px-3 py-1 rounded-full bg-white/5">#伦理考量</span>
+              <span class="px-3 py-1 rounded-full bg-white/5">#交互设计</span>
+              <span class="px-3 py-1 rounded-full bg-white/5">#数字策展</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer-wrap py-10">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-3 text-sm text-slate-400">
+        <p>© <span data-year></span> FCLAB. 保留所有权利。</p>
+        <div class="flex gap-6">
+          <a class="hover:text-cyan-300" href="#">RSS</a>
+          <a class="hover:text-cyan-300" href="#">GitHub</a>
+          <a class="hover:text-cyan-300" href="#">Twitter</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

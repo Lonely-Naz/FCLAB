@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>首页 - 封辰LAB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/theme.css" />
+</head>
+<body class="home-page">
+  <div class="site-shell">
+    <nav class="nav-wrap fixed top-0 w-full z-50">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a class="brand-text text-xl" href="index.html">FCLAB</a>
+        <div class="desktop-nav flex items-center gap-8 font-['Space_Grotesk'] text-sm font-semibold">
+          <a class="nav-link active" href="index.html">首页</a>
+          <a class="nav-link" href="about.html">关于我</a>
+          <a class="nav-link" href="portfolio.html">作品集</a>
+          <a class="nav-link" href="thoughts.html">个人博客</a>
+        </div>
+        <div class="language-switch" data-language-switch aria-label="语言切换">
+          <button type="button" data-lang-option="zh" aria-pressed="true">中</button>
+          <button type="button" data-lang-option="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="home-main">
+      <section class="landing-hero" aria-label="封辰LAB 首页开场">
+        <div class="animated-hero-bg" aria-hidden="true">
+          <div class="hero-grid-lines"></div>
+          <div class="hero-orbit hero-orbit-one"></div>
+          <div class="hero-orbit hero-orbit-two"></div>
+          <div class="hero-sphere"></div>
+          <div class="hero-flare"></div>
+          <div class="hero-particles"></div>
+        </div>
+
+        <div class="landing-hero-content">
+          <div class="hero-badge">
+            <span></span>
+            Infinite Progress
+          </div>
+          <h1>探索 AI 的 <br /><span class="text-gradient">无限可能</span></h1>
+          <p>
+            我是封辰，一名与AI做朋友的“驯兽师”
+          </p>
+          <div class="hero-actions">
+            <a class="hero-action-primary" href="portfolio.html">查看我的作品</a>
+            <a class="hero-action-secondary" href="about.html">了解更多</a>
+          </div>
+        </div>
+
+        <div class="scroll-cue" aria-hidden="true">
+          <div><span></span></div>
+        </div>
+      </section>
+
+      <section class="ai-overview" id="ai-assistant">
+        <div class="ai-overview-grid">
+          <div class="ai-copy">
+            <span>Interactive AI</span>
+            <h2>专属知识库 <br /><span class="text-gradient">AI 问答助手</span></h2>
+            <p>
+              我的知识库沉淀在飞书中。AI 助手会把飞书里的项目资料、学习笔记、方法论和案例复盘作为长期知识源，再通过 HTTP 请求、RAG 检索和提示词编排生成回答。
+            </p>
+          </div>
+          <div class="ai-feature-list">
+            <article>
+              <div class="feature-icon">
+                <span class="material-symbols-outlined">database</span>
+              </div>
+              <div>
+                <h3>飞书知识源</h3>
+                <p>把飞书文档、Wiki、项目复盘和创作笔记整理为 AI 可检索的知识内容。</p>
+              </div>
+            </article>
+            <article>
+              <div class="feature-icon is-secondary">
+                <span class="material-symbols-outlined">psychology</span>
+              </div>
+              <div>
+                <h3>RAG 检索回答</h3>
+                <p>先从知识库召回相关资料，再结合问题生成回答，避免脱离个人经验空泛发挥。</p>
+              </div>
+            </article>
+            <article>
+              <div class="feature-icon is-muted">
+                <span class="material-symbols-outlined">public</span>
+              </div>
+              <div>
+                <h3>公开访问</h3>
+                <p>作为个人网站的一部分，访客可以直接提问，快速了解我的作品、能力和方法。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="knowledge-system" aria-label="飞书知识库 RAG 系统">
+          <div class="sync-panel">
+            <span class="system-label">FEISHU SOURCE</span>
+            <h3>飞书知识库已预存为 AI 记忆</h3>
+            <p>
+              飞书里的资料会经过同步、清洗、切片和向量化，进入 RAG 知识库。访客提问时，系统通过 HTTP 接口接收问题，检索相关知识片段，再把检索结果和提示词一起交给模型生成回答。
+            </p>
+          </div>
+          <div class="feishu-flow">
+            <div>
+              <span>01</span>
+              <strong>Feishu</strong>
+              <p>文档 / Wiki / 项目记录</p>
+            </div>
+            <div>
+              <span>02</span>
+              <strong>HTTP Sync</strong>
+              <p>同步内容并更新索引</p>
+            </div>
+            <div>
+              <span>03</span>
+              <strong>RAG</strong>
+              <p>召回相关知识片段</p>
+            </div>
+            <div>
+              <span>04</span>
+              <strong>Prompt</strong>
+              <p>约束身份、语气与边界</p>
+            </div>
+            <div>
+              <span>05</span>
+              <strong>Answer</strong>
+              <p>面向访客生成回答</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-terminal">
+          <div class="chat-header">
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+              <strong>Knowledge Terminal</strong>
+            </div>
+            <code>POST /api/ask</code>
+          </div>
+          <div class="chat-body" data-chat-log>
+            <div class="chat-empty-state" data-chat-empty>
+              <span class="material-symbols-outlined">bolt</span>
+              <h3>可以这样问我</h3>
+              <p>选择一个问题开始，或直接输入你想了解的内容。</p>
+              <div class="chat-suggestions" aria-label="推荐问题">
+                <button type="button" data-chat-suggestion="FCLAB目前有哪些作品方向？">FCLAB目前有哪些作品方向？</button>
+                <button type="button" data-chat-suggestion="你是如何学习和使用 AI 的？">你是如何学习和使用 AI 的？</button>
+                <button type="button" data-chat-suggestion="这个知识库问答系统是怎么实现的？">这个知识库问答系统是怎么实现的？</button>
+                <button type="button" data-chat-suggestion="你现在最关注哪些创作能力？">你现在最关注哪些创作能力？</button>
+              </div>
+            </div>
+          </div>
+          <form class="chat-input" data-chat-form>
+            <input data-chat-input type="text" placeholder="问问FCLAB：作品方向、AI 方法论、项目经验..." />
+            <button type="submit">发送</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-wrap py-10">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-3 text-sm text-slate-400">
+        <p>© <span data-year></span> FCLAB. 保留所有权利。</p>
+        <div class="flex gap-6">
+          <a class="hover:text-cyan-300" href="#">GitHub</a>
+          <a class="hover:text-cyan-300" href="#">LinkedIn</a>
+          <a class="hover:text-cyan-300" href="#">Twitter</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

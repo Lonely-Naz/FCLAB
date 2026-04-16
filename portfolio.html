@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>作品集 - 封辰LAB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/theme.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <nav class="nav-wrap fixed top-0 w-full z-50">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a class="brand-text text-xl" href="index.html">FCLAB</a>
+        <div class="desktop-nav flex items-center gap-8 font-['Space_Grotesk'] text-sm font-semibold">
+          <a class="nav-link" href="index.html">首页</a>
+          <a class="nav-link" href="about.html">关于我</a>
+          <a class="nav-link active" href="portfolio.html">作品集</a>
+          <a class="nav-link" href="thoughts.html">个人博客</a>
+        </div>
+        <div class="language-switch" data-language-switch aria-label="语言切换">
+          <button type="button" data-lang-option="zh" aria-pressed="true">中</button>
+          <button type="button" data-lang-option="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-32 pb-24 px-6 max-w-7xl mx-auto">
+      <header class="mb-14">
+        <h1 class="section-title text-6xl md:text-7xl text-gradient">创作展示</h1>
+        <p class="text-slate-300/80 text-lg mt-6 max-w-3xl leading-relaxed">
+          探索生成式 AI 的可能性，从分镜叙事、视频生成到视觉参考研究，这里记录可复用的方法与作品
+        </p>
+        <div class="portfolio-filter flex flex-wrap gap-3 mt-8" aria-label="作品筛选">
+          <a class="portfolio-filter-button is-active" href="#top">全部作品</a>
+          <a class="portfolio-filter-button" href="#learning-path">学习路径</a>
+        </div>
+      </header>
+
+      <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <article class="glass-panel rounded-2xl overflow-hidden border border-white/10 card-hover">
+          <button class="relative h-60 overflow-hidden bg-black w-full text-left group" type="button" data-lightbox-type="video" data-lightbox-src="assets/videos/portfolio/full/ai-safety-patrol-full.mp4">
+            <video class="portfolio-preview-video w-full h-full object-cover" src="assets/videos/portfolio/previews/ai-safety-patrol-preview.mp4" muted playsinline preload="metadata" data-hover-preview-video data-thumbnail-time="1" data-preview-start="0" data-preview-end="6.8"></video>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            <span class="absolute left-4 top-4 z-10 px-3 py-1 rounded bg-black/50 text-xs text-cyan-200 border border-white/10">AI VIDEO</span>
+            <span class="absolute right-4 bottom-4 z-10 rounded bg-white/90 px-3 py-1 text-xs font-semibold text-black opacity-0 transition-opacity group-hover:opacity-100">点击查看完整视频</span>
+          </button>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">iqoo 13电商产品短片</h3>
+            <p class="text-slate-300/70 mt-3 text-sm">多分镜产品展示。</p>
+          </div>
+        </article>
+        <article class="glass-panel rounded-2xl overflow-hidden border border-white/10 card-hover">
+          <button class="relative h-60 overflow-hidden w-full text-left group" type="button" data-lightbox-type="image" data-lightbox-src="assets/images/portfolio/details/offshore-wind-light-study-detail.png">
+            <img class="w-full h-full object-cover" src="assets/images/portfolio/details/offshore-wind-light-study-detail.png" alt="海上风电与云层光影参考" loading="lazy" />
+            <span class="absolute right-4 bottom-4 rounded bg-white/90 px-3 py-1 text-xs font-semibold text-black opacity-0 transition-opacity group-hover:opacity-100">点击查看大图</span>
+          </button>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">AI生图前后对比图</h3>
+            <p class="text-slate-300/70 mt-3 text-sm">记录云层、海面、日落与风机剪影的色彩对照。</p>
+          </div>
+        </article>
+        <article class="glass-panel rounded-2xl overflow-hidden border border-white/10 card-hover">
+          <button class="relative h-60 overflow-hidden w-full text-left group" type="button" data-lightbox-type="image" data-lightbox-src="assets/images/portfolio/details/1.png">
+            <img class="w-full h-full object-cover" src="assets/images/portfolio/details/1.png" alt="工地巡检 AI 分镜图" loading="lazy" />
+            <span class="absolute right-4 bottom-4 rounded bg-white/90 px-3 py-1 text-xs font-semibold text-black opacity-0 transition-opacity group-hover:opacity-100">点击查看大图</span>
+          </button>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">工地巡检：有关产品的分镜图</h3>
+            <p class="text-slate-300/70 mt-3 text-sm">用六格分镜拆解短片节奏、人物动作和安全巡检情绪。</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="learning-path mt-28" id="learning-path">
+        <div class="learning-path-header">
+          <span>Learning Path</span>
+          <h2>我的学习路径</h2>
+          <p>
+            这不是一堆零散任务，而是我从基础接入、理解 AI、使用 AI，到借助 AI 做出真实项目的完整过程。
+          </p>
+        </div>
+
+        <div class="learning-path-grid">
+          <article>
+            <span>01</span>
+            <h3>先进入这个世界</h3>
+            <p>
+              完成基础数字环境接入，注册并熟悉常用平台账号，理解国外网站的用途，建立稳定的信息获取入口。
+            </p>
+            <ul>
+              <li>账号与平台认知</li>
+              <li>英文界面适应</li>
+              <li>基础网络能力</li>
+            </ul>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h3>学会和 AI 高效协作</h3>
+            <p>
+              系统认识主流 AI 工具，学习提示词工程，并用 Markdown、JSON 和笔记工具训练结构化表达能力。
+            </p>
+            <ul>
+              <li>AI 工具认知</li>
+              <li>提示词工程</li>
+              <li>结构化表达</li>
+            </ul>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h3>从会用工具，到理解原理</h3>
+            <p>
+              进入生图、生视频、生音频与多模态实战，理解 HTTP 请求、API 调用和云端模型如何把需求变成结果。
+            </p>
+            <ul>
+              <li>多模态生成</li>
+              <li>HTTP / API</li>
+              <li>ComfyUI 工作流</li>
+            </ul>
+          </article>
+
+          <article>
+            <span>04</span>
+            <h3>把学习结果真正做出来</h3>
+            <p>
+              学习 GitHub、VS Code 和本地 AI 助手，把个人信息、学习过程、作品展示与 AI 问答系统落到一个可访问的网站中。
+            </p>
+            <ul>
+              <li>网站开发</li>
+              <li>GitHub 管理</li>
+              <li>AI 问答与知识库</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="learning-path-summary">
+          <p>
+            这条路径让我完成了一次从“会用工具”到“能做作品”的能力升级：把想法落地，把学习变成作品，把工具变成能力。
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" data-lightbox hidden>
+      <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="作品预览">
+        <div class="lightbox-header">
+          <h2 data-lightbox-title></h2>
+          <button type="button" data-lightbox-close aria-label="关闭预览">关闭</button>
+        </div>
+        <div class="lightbox-content" data-lightbox-content></div>
+      </div>
+    </div>
+
+    <footer class="footer-wrap py-10">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-3 text-sm text-slate-400">
+        <p>© <span data-year></span> FCLAB. 保留所有权利。</p>
+        <div class="flex gap-6">
+          <a class="hover:text-cyan-300" href="#">GitHub</a>
+          <a class="hover:text-cyan-300" href="#">LinkedIn</a>
+          <a class="hover:text-cyan-300" href="#">Twitter</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/main.js?v=portfolio-hover-preview-20260416"></script>
+</body>
+</html>

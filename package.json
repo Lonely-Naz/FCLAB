@@ -1,0 +1,14 @@
+{
+  "name": "fclab-personal-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "sync:feishu": "node server.js --sync-feishu",
+    "check": "node --check server.js && node --check assets/js/main.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
